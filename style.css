@@ -1,0 +1,212 @@
+body {
+    background-color: #69FF82;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navegacion{
+position: fixed;
+right: 20px;
+}
+.navegacion a{
+    padding: 10px;
+    background-color: #FBA919;
+    color: black;
+    font-family:'Open Sans', sans-serif ;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.navegacion a:hover{
+background-color: rgb(204, 45, 164);
+}
+
+.imgt{
+width:10% ;
+padding: 1rem;
+}
+
+.texto{
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    align-items: center;
+    text-align: center; 
+    width: 80%;
+
+    background-color: #45C165;
+    padding: 3rem 8rem 3rem 8rem;
+    margin: 3rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+}
+.imgf{
+    width:7% ;
+padding: 1rem;
+}
+.front{
+    background-color: #42CD59;
+    width: 96%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center; 
+}
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 1rem 1rem 2.5rem 1rem;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+
+
+/* ===== SECCIÓN UNO =====  */
+
+.seccion-uno {
+    width: 100%;
+    margin: 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px ;
+    background-color: #5DDAE4;
+}
+
+.contenedor-uno {
+    width: 80%;
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: url("img/palomita.png"), auto;  /*Esto cambia el cursor*/
+    border: 2px ;
+}
+
+.monita-uno {
+    width: 60%;
+}
+
+.box1 {
+    width: 35%;
+    position: relative;
+    padding: 20px;
+    background: #39974E;
+    color: #fff;
+    border-radius: 20px;
+
+    font-family: arial;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.5;
+
+    transform: scale(0);
+    transition: 1s ease;
+}
+
+.boxpunta1:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 30px solid transparent;
+    border-right: 30px solid #39974E;
+    border-top: 30px solid #39974E;
+    border-bottom: 30px solid transparent;
+    left: -50px;
+    top: 30%;
+    transform: scale(0);
+    transition: 1.5s ease;
+}
+
+.contenedor-uno:hover .box1 {
+    transform: scale(1);
+}
+
+.contenedor-uno:hover .boxpunta1:before {
+    transform: scale(1);
+}
+
+
+
+
+/* ===== SECCIÓN DOS =====  */
+
+.seccion-dos {
+    width: 100%;
+    margin: 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px ;
+    background-color: #B279F3;
+}
+
+.contenedor-dos {
+    width: 80%;
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: url("img/tache.png"), auto;  /*Esto cambia el cursor*/
+    border: 2px  ;
+}
+
+.monita-dos {
+    width: 60%;
+}
+
+.box2 {
+    width: 35%;
+    position: relative;
+    padding: 20px;
+    background: red;
+    color: #fff;
+    border-radius: 20px;
+
+    font-family: arial;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.5;
+
+    transform: scale(0);
+    transition: 1s ease;
+}
+
+.boxpunta2:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 30px solid transparent;
+    border-right: 30px solid red;
+    border-top: 30px solid red;
+    border-bottom: 30px solid transparent;
+    left: -50px;
+    top: 30%;
+    transform: scale(0);
+    transition: 1.5s ease;
+}
+
+.contenedor-dos:hover .box2 {
+    transform: scale(1);
+}
+
+.contenedor-dos:hover .boxpunta2:before {
+    transform: scale(1);
+}
+
